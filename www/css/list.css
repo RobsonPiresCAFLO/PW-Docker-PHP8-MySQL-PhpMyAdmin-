@@ -1,0 +1,39 @@
+a:hover{
+	text-decoration: none;
+}
+
+.btn {
+	padding-left: 5%;
+	text-align: left
+	}
+
+.grande { font-size: 1.3em;}
+
+.largura {
+ 	width: 230px;
+	margin: 3px;
+}
+
+/* Desktop maiores */
+@media (min-width: 600px) {
+ 	.container-fluid  {
+		width: 500px;
+		margin: 3% auto;
+			}
+	 }
+
+/* tables em formato porta retrato até os desktos no formato paisagem */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* dispositivo em paisagem até os tablets em formato porta-retrato */
+@media (max-width: 767px) {
+
+ }
+
+/* dispositivo no formato paisagem e abaixos */
+@media (max-width: 480px) {
+
+
+ }
