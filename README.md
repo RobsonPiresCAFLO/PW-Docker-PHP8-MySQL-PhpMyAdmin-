@@ -34,9 +34,19 @@ Com o `name:` fixo, a pasta pode ser renomeada ou movida à vontade que os conta
 
 Use localhost para acessar o apache e localhost:8080 para acessar o PhpMyAdmin.
 Coloque seus projetos em www.
-Usuários do BD: 
-root root
-admin admin123
+
+### 🔑 Acesso ao banco
+
+Credenciais definidas no `docker-compose.yml` (criadas automaticamente na primeira execução):
+
+| Usuário | Senha | Permissões |
+|---|---|---|
+| `root` | `root` | acesso total a todos os bancos |
+| `user` | `user123` | acesso ao banco `meu_banco` |
+
+O banco `meu_banco` também é criado automaticamente na primeira execução.
+
+> **Atenção:** esses valores só são aplicados quando o volume de dados é criado do zero. Se o volume já existir, o MySQL mantém os usuários e bancos que já estavam lá e ignora essas variáveis.
 
 Divirtam-se!!! 
 Prof. Me. Robson Pires Borges 
