@@ -1,3 +1,5 @@
+name: apache-mysql-php8-laravel
+
 services:
   apache:
     build: .
